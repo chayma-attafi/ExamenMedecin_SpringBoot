@@ -25,6 +25,8 @@ public class Patient implements Serializable {
     long idPatient;
     String NomPatiennt;
     int telephone;
+
+    @Temporal(TemporalType.DATE)
     Date dateDeNaissance;
 
     @JsonIgnore

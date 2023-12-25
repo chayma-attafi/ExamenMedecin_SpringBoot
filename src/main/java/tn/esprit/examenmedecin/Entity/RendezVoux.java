@@ -23,7 +23,9 @@ public class RendezVoux implements Serializable {
     @Column(name ="idRendezVoux")
     long idRendezVoux;
 
+    @Temporal(TemporalType.DATE)
     Date dateRDV;
+
     String Remarque;
 
     @JsonIgnore
